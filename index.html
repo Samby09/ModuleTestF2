@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentPortal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"><h3>Student Portal</h3></div>
+    <form id="form" role="search">
+        <input type="text" id="searchInput"
+         placeholder="Search...">
+        <button id="searchBtn" onclick="searchTables()">Search</button>
+    </form>
+    <div class="buttonDiv">
+      <button id="sortByAz" class="sortBtn" onclick="sortAz()">Sort A&#8594Z</button>
+
+      <button id="sortByZA"class="sortBtn" onclick="sortZa()">Sort Z&#8594A</button>
+
+      <button id="sortByMarks" class="sortBtn " onclick="sortMarks()">Sort by Marks</button>
+
+      <button id="sortByPassing" class="sortBtn" onclick= "sortPassing()">Sort by Passing</button>
+
+      <button id="sortByClass" class="sortBtn" onclick="sortClass()">Sort by Class</button>
+
+      <button id="sortByGender" class="sortBtn" onclick="sortGender()">Sort by Gender</button>
+    
+    </div>
+
+    <div class="tableDiv">
+        <table class="tab">
+            <thead id="Hsection">
+               <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+               </tr>
+            </thead>
+          <tbody id="tableBody">
+
+          </tbody>
+            
+        </table>
+    </div>
+    <div id="femaleTable" ></div>
+    <div id="maleTable"></div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
